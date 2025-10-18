@@ -92,7 +92,7 @@ const ResumeBuilder = () => {
 
         try {
             const res = await axios.post(
-                "http://localhost:3000/api/resume/create",
+                "https://careercompanion-backend-mgbo.onrender.com/api/resume/create",
                 formData,
                 { headers: { "Content-Type": "multipart/form-data" }, withCredentials: true }
             );

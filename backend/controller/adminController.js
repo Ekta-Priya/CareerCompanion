@@ -9,7 +9,7 @@ import { fileURLToPath } from "url";
 import Admin from "../models/admin.js"; 
 import User from "../models/User.js";
 import Resume from "../models/Resume.js";
-import Job from "../models/Job.js";
+import Job from "../models/job.js";
 
 
 const __filename = fileURLToPath(import.meta.url);

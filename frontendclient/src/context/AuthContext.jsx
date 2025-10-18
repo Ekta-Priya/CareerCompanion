@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
 
   const checkUser = async () => {
     try {
-      const { data } = await axios.get("http://localhost:3000/api/auth/me", { withCredentials: true });
+      const { data } = await axios.get("https://careercompanion-backend-mgbo.onrender.com/api/auth/me", { withCredentials: true });
       setUser(data.user);
     } catch (err) {
       setUser(null);

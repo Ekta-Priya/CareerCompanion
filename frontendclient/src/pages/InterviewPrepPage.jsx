@@ -55,7 +55,7 @@ const InterviewPrepPage = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/interview",
+        "https://careercompanion-backend-mgbo.onrender.com/api/interview",
         { jobRole },
         { withCredentials: true }
       );

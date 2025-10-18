@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_BACKEND_URL || "http://localhost:3000/api",
+  baseURL: import.meta.env.VITE_BACKEND_URL || "https://careercompanion-backend-mgbo.onrender.com/api",
 });
 
 API.interceptors.request.use((req) => {

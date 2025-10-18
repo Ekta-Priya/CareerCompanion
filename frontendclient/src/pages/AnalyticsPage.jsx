@@ -17,9 +17,9 @@ const AnalyticsPage = () => {
         const axiosConfig = { withCredentials: true };
 
         const [growthRes, skillRes, trendRes] = await Promise.all([
-          axios.get("http://localhost:3000/api/analytics/growth", axiosConfig),
-          axios.get("http://localhost:3000/api/analytics/skills", axiosConfig),
-          axios.get("http://localhost:3000/api/analytics/trends", axiosConfig),
+          axios.get("https://careercompanion-backend-mgbo.onrender.com/api/analytics/growth", axiosConfig),
+          axios.get("https://careercompanion-backend-mgbo.onrender.com/api/analytics/skills", axiosConfig),
+          axios.get("https://careercompanion-backend-mgbo.onrender.com/api/analytics/trends", axiosConfig),
         ]);
 
         setGrowthData(growthRes.data.growthMetrics || []);

@@ -12,7 +12,7 @@ export default function Resumes() {
       const res = await API.get("/admin/resumes");
       setResumes(res.data);
     } catch (err) {
-      console.error("❌ Error fetching resumes:", err);
+      console.error("Error fetching resumes:", err);
     }
   };
 
@@ -21,7 +21,7 @@ export default function Resumes() {
       await API.delete(`/admin/resumes/${id}`);
       fetchResumes();
     } catch (err) {
-      console.error("❌ Error deleting resume:", err);
+      console.error("Error deleting resume:", err);
     }
   };
 

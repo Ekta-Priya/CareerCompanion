@@ -6,7 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import InterviewPrepPage from "./pages/InterviewPrepPage";
 import ProtectedRoute from "./components/ProtectedRoute";
-import MainLayout from "./components/mainLayout";
+import MainLayout from "./components/MainLayout";
 import ResumeBuilder from "./pages/ResumeBuilder";
 
 

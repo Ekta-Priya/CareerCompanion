@@ -15,7 +15,7 @@ const JobRecommendations = () => {
 
     setLoading(true);
     try {
-      const { data } = await axios.post("http://localhost:3000/api/jobs/recommend", {
+      const { data } = await axios.post("https://careercompanion-backend-mgbo.onrender.com/api/jobs/recommend", {
         skills: user.resume.skills,
       });
 

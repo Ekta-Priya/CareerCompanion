@@ -23,7 +23,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/auth/register",
+        "https://careercompanion-backend-mgbo.onrender.com/api/auth/register",
         form,
         { withCredentials: true }
       );

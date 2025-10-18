@@ -23,7 +23,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:3000/api/auth/login', { email, password },{ withCredentials: true });
+      const res = await axios.post('https://careercompanion-backend-mgbo.onrender.com/api/auth/login', { email, password },{ withCredentials: true });
 
       localStorage.setItem('token', res.data.token);  
       setUser(res.data.user);

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const authAPI = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: "https://careercompanion-backend-mgbo.onrender.com",
   withCredentials: true,
 });
 

@@ -25,7 +25,6 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization"],
 
 }))
-app.use(express.json());
 
 app.use("/api/auth", router)
 app.use('/api/resume', resumeRoutes);

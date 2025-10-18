@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-  origin: ["http://localhost:5174", "https://careercompanion-frontendclient.onrender.com"],
+  origin: ["https://careercompanion-adminpanel.onrender.com", "https://careercompanion-frontendclient.onrender.com"],
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization"],
 

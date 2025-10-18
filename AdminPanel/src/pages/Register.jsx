@@ -15,7 +15,7 @@ const AdminRegister = () => {
     setMessage("");
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:3000/api/admin/register", formData);
+      const res = await axios.post("https://careercompanion-backend-mgbo.onrender.com/api/admin/register", formData);
       setMessage(res.data.message || "Registration successful!");
       setLoading(false);
       setTimeout(() => navigate("/"), 1500);
